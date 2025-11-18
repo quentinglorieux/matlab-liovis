@@ -169,25 +169,13 @@ Exercice : tracer un signal temporel et créer une fonction associée
 - afficher ce signal (plot + titres/étiquettes).  
 2. Créer une fonction amplitude.m qui renvoie l’amplitude max d’un vecteur :
 
-```matlab
-function A = amplitude(v)
-    A = max(abs(v));
-end
-```
 
 3. L’appeler dans le script et afficher l’amplitude :
 
-```matlab
-A = amplitude(s);
-fprintf('Amplitude du signal : %.2f\n', A);
-```
 
 4. Ajouter une seconde figure avec un zoom temporel :
 
-```matlab
-figure;
-plot(t, s); xlim([0 0.05]);
-```
+
 
 A retenir : scripts, fonctions, graphes, bonnes pratiques de nommage.
 
