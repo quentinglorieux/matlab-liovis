@@ -7,7 +7,7 @@ theme: default
 class: lead
 ---
 
-# Cours 1  
+# Cours 1.1
 ## Introduction à Matlab
 
 Bases, scripts, fonctions, graphiques
@@ -202,63 +202,39 @@ imagesc(I); colormap gray; axis image;
 
 ---
 
-## Exercice guidé (1/2)
+## Exercice (1/2)
 
-Créer un script `signal1.m` :
+Créer un script `signal1.m` qui génère et trace la somme de deux signaux sinusoïdaux.
 
-```matlab
-t = 0:0.001:1;
-s = 2*sin(2*pi*50*t) + 0.5*cos(2*pi*120*t);
-plot(t, s);
-```
 
 ---
 
-## Exercice guidé (2/2)
+## Exercice  (2/2)
 
-Créer une fonction `amplitude.m` :
+Créer une fonction `amplitude.m` qui calcule l’amplitude d’un signal.
 
-```matlab
-function A = amplitude(v)
-    A = max(abs(v));
-end
-```
 
-Dans `signal1.m` :
+Utiliser la fonction `amplitude` dans le script `signal1.m` pour afficher l’amplitude du signal.
 
-```matlab
-A = amplitude(s);
-fprintf('Amplitude : %.2f\n', A);
-```
 
 ---
 
 ## Zoom temporel
-
-```matlab
-figure;
-plot(t,s);
-xlim([0 0.05]);
-```
+Ajouter dans le script `signal1.m` pour zoomer sur les 50 premiers millisecondes.
 
 ---
 
 ## Mini-TP : Profil d'image
 
-```matlab
-I = imread('cameraman.tif');
-p = I(100,:);
-plot(p);
-```
+Créer un script `profil_image.m` qui charge une image, extrait la ligne 100 et trace son profil d’intensité.
 
 ---
 
 ## Conclusion
 
 Compétences acquises :
-- bases Matlab  
+- bases de l'interface Matlab  
 - scripts et fonctions  
-- graphiques 1D  
+- graph 1D
 - affichage d’image  
 
----
