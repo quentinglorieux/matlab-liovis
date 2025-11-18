@@ -9,7 +9,7 @@ Matlab est un environnement de calcul numérique. Il combine :
 
 ### 1.1. Interface
 
-Points essentiels à présenter :
+Points essentiels à trouver :
 - Command Window : exécution immédiate de commandes.
 - Editor : rédaction de scripts (.m) et fonctions.
 - Workspace : variables en mémoire.
