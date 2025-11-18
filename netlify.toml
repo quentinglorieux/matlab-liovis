@@ -1,0 +1,3 @@
+[build]
+  command = "npx @marp-team/marp-cli slides.md -o index.html"
+  publish = "dist"
