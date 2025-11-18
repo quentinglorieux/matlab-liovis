@@ -7,7 +7,7 @@ theme: default
 class: lead
 ---
 
-# Cours 1  
+# Cours 1
 ## Introduction à Matlab
 
 Bases, scripts, fonctions, graphiques
