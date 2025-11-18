@@ -206,11 +206,11 @@ imagesc(I); colormap gray; axis image;
 
 Créer un script `signal1.m` qui génère et trace la somme de deux signaux sinusoïdaux.
 
-<!-- ```matlab
+```matlab
 t = 0:0.001:1;
 s = 2*sin(2*pi*50*t) + 0.5*cos(2*pi*120*t);
 plot(t, s);
-``` -->
+```
 
 ---
 
@@ -218,29 +218,29 @@ plot(t, s);
 
 Créer une fonction `amplitude.m` qui calcule l’amplitude d’un signal.
 
-<!-- ```matlab
+```matlab
 function A = amplitude(v)
     A = max(abs(v));
 end
-``` -->
+```
 
 Utiliser la fonction `amplitude` dans le script `signal1.m` pour afficher l’amplitude du signal.
 
-<!-- ```matlab
+```matlab
 A = amplitude(s);
 fprintf('Amplitude : %.2f\n', A);
-``` -->
+```
 
 ---
 
 ## Zoom temporel
 Ajouter dans le script `signal1.m` pour zoomer sur les 50 premiers millisecondes.
 
-<!-- ```matlab
+```matlab
 figure;
 plot(t,s);
 xlim([0 0.05]);
-``` -->
+```
 
 ---
 
@@ -248,11 +248,11 @@ xlim([0 0.05]);
 
 Créer un script `profil_image.m` qui charge une image, extrait la ligne 100 et trace son profil d’intensité.
 
-<!-- ```matlab
+```matlab
 I = imread('cameraman.tif');
 p = I(100,:);
 plot(p);
-``` -->
+```
 
 ---
 
