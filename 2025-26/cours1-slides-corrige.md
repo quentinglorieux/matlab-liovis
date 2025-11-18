@@ -8,7 +8,7 @@ class: lead
 ---
 
 # Cours 1  
-## Introduction à Matlab
+## Introduction à Matlab - Corrigé
 
 Bases, scripts, fonctions, graphiques
 
