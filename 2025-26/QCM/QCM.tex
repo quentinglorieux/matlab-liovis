@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{lmodern}
+
+\geometry{margin=1.5cm}
+
+\begin{document}
+
+\begin{center}
+    \LARGE QCM --- Cours 1 : Introduction à Matlab\\[-1em]
+\end{center}
+
+\bigskip
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+
+\item Quelle est la structure de base d'un script Matlab ?
+\begin{enumerate}[label=\alph*)]
+    \item Une fonction avec un retour obligatoire
+    \item Un fichier \texttt{.m} exécuté de haut en bas
+    \item Un fichier compilé avant exécution
+    \item Un fichier indépendant du Workspace
+\end{enumerate}
+
+\item Laquelle des propositions décrit correctement une \textbf{fonction} Matlab ?
+\begin{enumerate}[label=\alph*)]
+    \item Elle modifie toujours le Workspace
+    \item Elle possède son propre espace de variables
+    \item Elle ne peut pas avoir de sortie
+    \item Elle ne peut être appelée que dans un script
+\end{enumerate}
+
+\item Dans Matlab, l'indexation commence :
+\begin{enumerate}[label=\alph*)]
+    \item à 0
+    \item à 1
+    \item à $-1$
+    \item cela dépend du type de variable
+\end{enumerate}
+
+\item La commande \texttt{linspace(0,10,100)} génère :
+\begin{enumerate}[label=\alph*)]
+    \item un vecteur de 100 valeurs espacées d'un pas de 1
+    \item un vecteur de 100 valeurs entre 0 et 10
+    \item un vecteur de taille 101
+    \item une matrice $10\times 100$
+\end{enumerate}
+
+\item Que fait la commande \texttt{zeros(3,2)} ?
+\begin{enumerate}[label=\alph*)]
+    \item Crée un vecteur ligne de trois zéros
+    \item Crée une matrice $3\times 2$ de zéros
+    \item Crée une matrice $2\times 3$ de zéros
+    \item Efface trois variables
+\end{enumerate}
+
+\item Laquelle de ces instructions effectue une multiplication \textbf{élément par élément} ?
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{A * B}
+    \item \texttt{A .* B}
+    \item \texttt{A . B}
+    \item \texttt{A x B}
+\end{enumerate}
+
+\item La commande \texttt{A'} correspond à :
+\begin{enumerate}[label=\alph*)]
+    \item l'inverse de A
+    \item l'adjointe (transposée conjuguée) de A
+    \item la dérivée de A
+    \item la symétrisation de A
+\end{enumerate}
+
+\item Quel fichier doit contenir la fonction \texttt{carre(x)} ?
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{script.m}
+    \item \texttt{function.m}
+    \item \texttt{carre.m}
+    \item n'importe quel nom
+\end{enumerate}
+
+\item Que fait l'instruction \texttt{plot(x,y)} ?
+\begin{enumerate}[label=\alph*)]
+    \item Affiche une image
+    \item Trace une courbe de $y$ en fonction de $x$
+    \item Calcule la FFT de $y$
+    \item Enregistre une figure
+\end{enumerate}
+
+\item Que permet \texttt{hold on} ?
+\begin{enumerate}[label=\alph*)]
+    \item Remplacer la figure existante
+    \item Ajouter des courbes sur la même figure
+    \item Effacer la figure
+    \item Changer l'échelle des axes
+\end{enumerate}
+
+\item La commande \texttt{subplot(2,1,1)} prépare une figure :
+\begin{enumerate}[label=\alph*)]
+    \item composée de 2 lignes et 1 colonne, zone 1
+    \item de 1 ligne et 2 colonnes, zone 1
+    \item de 2 graphiques superposés non indépendants
+    \item de 2 fenêtres séparées
+\end{enumerate}
+
+\item \texttt{imagesc(I)} :
+\begin{enumerate}[label=\alph*)]
+    \item efface la matrice
+    \item affiche la matrice comme image
+    \item convertit la matrice en double
+    \item calcule le spectre de l'image
+\end{enumerate}
+
+\item Quel est l'intérêt principal d'une fonction ?
+\begin{enumerate}[label=\alph*)]
+    \item Augmenter la taille du Workspace
+    \item Réutiliser et structurer du code
+    \item Accéder directement aux variables globales
+    \item Modifier automatiquement le dossier courant
+\end{enumerate}
+
+\item Quelle commande active la grille sur une figure ?
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{grid on}
+    \item \texttt{meshgrid}
+    \item \texttt{show grid}
+    \item \texttt{enableGrid()}
+\end{enumerate}
+
+\item Quelle commande permet d'ajouter un titre ?
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{figtitle}
+    \item \texttt{title()}
+    \item \texttt{label()}
+    \item \texttt{text()}
+\end{enumerate}
+
+\item Une variable définie dans un script :
+\begin{enumerate}[label=\alph*)]
+    \item disparaît immédiatement
+    \item reste dans le Workspace
+    \item n'est accessible que dans les fonctions
+    \item devient automatiquement globale
+\end{enumerate}
+
+\item Syntaxe correcte d'une fonction à deux sorties :
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{function sortie1, sortie2 = f(x)}
+    \item \texttt{function [s1, s2] = f(x)}
+    \item \texttt{function f(x) = [s1, s2]}
+    \item \texttt{function \{s1, s2\} = f(x)}
+\end{enumerate}
+
+\item Quel vecteur a un \textbf{pas fixe} ?
+\begin{enumerate}[label=\alph*)]
+    \item \texttt{linspace(0,1,1000)}
+    \item \texttt{0:0.001:1}
+    \item \texttt{time(0,1,1000)}
+    \item \texttt{seq(0,1,0.001)}
+\end{enumerate}
+
+
+
+\bigskip
+
+\begin{center}
+\Large \textbf{Grille de réponses}
+\end{center}
+
+\bigskip
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Questions} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+\hline
+\textbf{Réponses} & & & & & & & & & & & & & & & & & & \\
+\hline
+\textbf{Correction} & & & & & & & & & & & & & & & & & & \\
+\hline
+\end{tabular}
+
+\end{enumerate}
+
+%\newpage
+%\section*{Corrigé (enseignant)}
+%% Indiquez ici le barème et les réponses si vous le souhaitez.
+
+\end{document}

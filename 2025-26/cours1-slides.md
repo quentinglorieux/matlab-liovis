@@ -12,6 +12,9 @@ class: lead
 
 Bases, scripts, fonctions, graphiques
 
+https://matlab-liovis.vercel.app/
+https://github.com/quentinglorieux/matlab-liovis
+
 ---
 
 ## Objectifs du cours
